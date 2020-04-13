@@ -50,6 +50,14 @@ Dark green: #28b485
   box-sizing: inherit;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  padding: 1vh;
+}
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -68,18 +76,10 @@ Dark green: #28b485
 }
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out;
-}
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  color: #777;
-  padding: 1vh;
 }
 
 .logo-box {
