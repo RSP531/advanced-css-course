@@ -44,13 +44,15 @@ Dark green: #28b485
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
+  text-align: center;
 }
 
 .heading-primary-main {
   display: block;
   font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -84,8 +86,7 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .header {
@@ -101,4 +102,44 @@ body {
   clip-path: polygon(0 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
   /* clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); */
   position: relative;
+  text-align: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+.btn--white::after {
+  background-color: #fff;
 }
